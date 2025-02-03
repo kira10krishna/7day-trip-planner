@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## agents.py
 This file contains the definition of custom agents.
 To create a Agent, you need to define the following:
@@ -27,3 +28,7 @@ To create a Crew , you need to define Agent ,Task and following Parameters:
 4. debug: If True, print the debug logs.(default is False).
 
     [More Details about Crew](https://docs.crewai.com/concepts/crew).
+=======
+# 7day-trip-planner
+7 Day Trip Planner
+>>>>>>> d74c89a28c36afbd92c107913393b9b6dbb72679
