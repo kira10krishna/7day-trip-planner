@@ -5,6 +5,7 @@ from langchain_openai import ChatOpenAI
 from tools.search_tools import SearchTools
 from tools.calculator_tools import CalculatorTools
 
+
 """
 Creating Agents Cheat Sheet:
 - Think like a boss. Work backwards from the goal and think which employee 
@@ -54,7 +55,7 @@ class TravelAgents:
                 CalculatorTools.calculate
             ],
             verbose=True,
-            llm=self.OpenAIGPT4,
+            llm=self.OpenAIGPT35,
         )
 
     def city_selection_expert(self):
@@ -66,7 +67,7 @@ class TravelAgents:
                 f"""Select the best cities based on weather, season, prices, and traveler interests"""),
             tools=[SearchTools.search_internet],
             verbose=True,
-            llm=self.OpenAIGPT4,
+            llm=self.OpenAIGPT35,
         )
 
     def local_tour_guide(self):
@@ -78,5 +79,5 @@ class TravelAgents:
                 f"""Provide the BEST insights about the selected city"""),
             tools=[SearchTools.search_internet],
             verbose=True,
-            llm=self.OpenAIGPT4,
+            llm=self.OpenAIGPT35,
         )
